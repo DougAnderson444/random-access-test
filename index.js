@@ -1,7 +1,7 @@
 "use strict"
 
 const tape = require("tape")
-const Buffer = require("buffer").Buffer
+const Buffer = require("buffer/").Buffer //https://www.npmjs.com/package/buffer#usage  note: the trailing slash is important!
 
 module.exports = function(createRandomAccessFile, options) {
   tape("write and read", function(t) {
